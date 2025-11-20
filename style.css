@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+nav{
+    background-color: lightseagreen;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 2px solid black;
+}
+
+
+.nav-links{
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: white;
+}
+
+#hero-section{
+    height: 80vh;
+    background-color: lightgray;
+    /* background: transparent; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:active{
+    transform: scale(0.97);
+}
+
+footer{
+    height: 300px;
+    background-color: darkcyan;
+    padding: 20px 40px;
+    /* color: white; */
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid black;
+
+}
+
+.links h3{
+    margin-bottom: 10px;
+}
+
+
+.footer-links{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
