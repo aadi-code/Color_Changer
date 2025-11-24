@@ -10,6 +10,11 @@ html,body{
     transition: 0.3s ease;
 }
 
+:root{
+    --colors : black;
+}
+
+
 nav{
     height: 50px;
     /* position: fixed; */
@@ -18,18 +23,21 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid var(--colors);
     padding-inline: 50px;
 }
+
 
 .logo{
     height: 100%;
     padding-right: 2rem;
-    border-right: 2px solid black;
+    border-right: 2px solid var(--colors);
     letter-spacing: 5px;
     font-size: 1.7rem;
     display: flex;
     align-items: center;
+    color: var(--colors);
+    cursor: pointer;
 }
 
 .nav-links{
@@ -39,21 +47,16 @@ nav{
     align-items: center;
     justify-content: center;
     height: 100%;
-    /* color: white; */
 }
 
 .nav-links li{
     cursor: pointer;
+    color: var(--colors);
 }
 
-.logo{
-    cursor: pointer;
-}
 
 #hero-section{
     height: calc(100vh - 270px);
-    /* background-color: lightgray; */
-    /* background: transparent; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,18 +79,16 @@ button:active{
 
 footer{
     height: 220px;
-    /* background-color: darkcyan; */
     padding: 20px 60px;
-    /* color: white; */
     display: flex;
     justify-content: space-between;
-    /* border-top: 2px solid black; */
-    border-top: 2px solid black;
+    border-top: 2px solid var(--colors);
 
 }
 
 .links h3{
     margin-bottom: 10px;
+    color: var(--colors);
 }
 
 
@@ -96,12 +97,14 @@ footer{
     display: flex;
     flex-direction: column;
     gap: 5px;
+    color: var(--colors);
 }
 
 .f-logo{
     font-weight: 500;
     font-size: 1.7rem;
     letter-spacing: 5px;
+    color: var(--colors);
 }
 
 .links{
@@ -113,4 +116,5 @@ footer{
     width: 60%;
     text-align: justify;
     padding-top: 10px;
+    color: var(--colors);
 }

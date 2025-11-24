@@ -74,6 +74,8 @@ bgChnage.addEventListener("click", () => {
 
     //+++++++++++++++++++++++++++++   This is the Optimized code   +++++++++++++++++++++++++++++++++++++++++++++++++++
 
+    const root = document.documentElement;
+
     const temp = document.createElement("div");
     temp.style.color = index;
     temp.style.display = "none";
@@ -88,15 +90,21 @@ bgChnage.addEventListener("click", () => {
     const luminance = 0.2126 * R + 0.7152 * G + 0.0722 * B;
 
     if(luminance < 128){
-        document.body.style.color = "white";
-        nav.style.borderColor = "white";
-        logo.style.borderColor = "white";
-        footer.style.borderColor = "white";
+        // document.body.style.color = "white";
+        // nav.style.borderColor = "white";
+        // logo.style.borderColor = "white";
+        // footer.style.borderColor = "white";
+
+        root.style.setProperty("--colors", "white");
+
+
     }else{
-        document.body.style.color = "black";
-        nav.style.borderColor = "black";
-        logo.style.borderColor = "black";
-        footer.style.borderColor = "black";
+        // document.body.style.color = "black";
+        // nav.style.borderColor = "black";
+        // logo.style.borderColor = "black";
+        // footer.style.borderColor = "black";
+        root.style.setProperty("--colors", "black");
+
     }
 
     document.body.style.backgroundColor = index;
